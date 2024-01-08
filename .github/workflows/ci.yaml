@@ -5,8 +5,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/setup-go@V4
+      - uses: actions/setup-go@v4
         with:
-          go-version: 1.21
+          go-version: 1.21.1
       - run: go test
       - run: go run math.go
