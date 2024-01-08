@@ -2,7 +2,7 @@ package test
 
 import (
 	"testing"
-	"math.go"
+	"math_test.go"
 )
 
 func TestSoma(t *testing.T) {
