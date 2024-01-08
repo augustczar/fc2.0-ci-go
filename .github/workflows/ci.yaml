@@ -6,7 +6,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-go@V4
-          with:
-            go-version: '1.21.1'
+        with:
+          go-version: 1.21
       - run: go test
       - run: go run math.go
