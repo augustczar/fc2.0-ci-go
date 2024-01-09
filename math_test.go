@@ -1,9 +1,6 @@
 package main
 
-import (
-	"testing"
-	"math_test.go"
-)
+import testing
 
 func TestSoma(t *testing.T) {
 	total := Soma(15, 15)
