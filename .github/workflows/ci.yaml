@@ -12,8 +12,8 @@ jobs:
       - uses: actions/setup-go@v4
         with:
           go-version: 1.21.1
-      - run: go mod init main    
-      - run: go test
+  
+      - run: go test *.go
       - run: go run math.go
 
       - name: Set up QEMU
