@@ -1,6 +1,16 @@
 package main
 
-import "testing"
+import (
+	"log"
+	"os"
+	"testing"
+)
+
+func Testmain(t *testing.T){
+	result:= t.Run()
+	log.Println("Finishing all tests")
+	os.Exit(result)
+}
 
 func TestSoma(t *testing.T) {
 	total := Soma(15, 15)
