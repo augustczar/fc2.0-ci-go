@@ -7,7 +7,7 @@ import (
 )
 
 func Testmain(t *testing.T){
-	result:= t.Run()
+	result:= t.main()
 	log.Println("Finishing all tests")
 	os.Exit(result)
 }
