@@ -1,6 +1,9 @@
 package main
 
-import "testing"
+import (
+	"fmt"
+	"testing"
+)
 
 func TestSoma(t *testing.T) {
 	total := Soma(15, 15)
