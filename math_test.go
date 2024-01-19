@@ -1,9 +1,12 @@
 package main
 
 import (
-	"fmt"
 	"testing"
 )
+
+func TestRunMain(t *testing.T){
+	main()
+}
 
 func TestSoma(t *testing.T) {
 	total := Soma(15, 15)
@@ -11,5 +14,5 @@ func TestSoma(t *testing.T) {
 	if total != 30 {
 		t.Errorf("Sum result is invalid: Result: %d. Expected: %d", total, 30)
 	}
-	
+		
 }
