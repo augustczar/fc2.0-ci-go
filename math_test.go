@@ -4,6 +4,10 @@ import (
 	"testing"
 )
 
+func TestRunMain(t *testing.T){
+	main()
+}
+
 func TestSoma(t *testing.T) {
 	total := Soma(15, 15)
 
