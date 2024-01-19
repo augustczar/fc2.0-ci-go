@@ -16,6 +16,12 @@ jobs:
       - run: go test *.go -coverprofile=coverage.out
       - run: go run math.go
 
+      - name: SonarCloud Scan
+        uses: SonarSource/sonarcloud-github-action@main
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Needed to get PR information, if any
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+
       - name: Set up QEMU
         uses: docker/setup-qemu-action@v3
 
