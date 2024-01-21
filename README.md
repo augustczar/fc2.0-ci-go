@@ -43,7 +43,7 @@ No GitHub, vá para "Settings" > "Secrets" e adicione os seguintes segredos:
 
 ### 4. GitHub Actions
 
-Este repositório já possui um fluxo de trabalho configurado em `.github/workflows/main.yml`. Este fluxo de trabalho é acionado em cada push e pull request para o ramo principal.
+Este repositório já possui um fluxo de trabalho configurado em `.github/workflows/ci.yml`. Este fluxo de trabalho é acionado em cada push e pull request para o ramo principal.
 
 ### 5. SonarCloud Scan
 
